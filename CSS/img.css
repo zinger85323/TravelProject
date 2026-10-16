@@ -1,0 +1,55 @@
+.hero_pic{
+    width: 75vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.hero_card{
+  width: 100%;
+  max-width: 800px;
+  height: 400px; /* 必須指定高度，或用 aspect-ratio */
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  
+  /* 背景圖片基本設定 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* 綁定動畫 */
+  animation: bgSlider 5s infinite;
+}
+
+#home_hero{
+  width: 100vw;
+  height: 100vh;
+  /* background-color: aqua; */
+  animation: bgSlider 5s infinite;
+  background-repeat: no-repeat;
+}
+
+@keyframes bgSlider {
+  /* --- 圖片 1 階段 --- */
+  0%, 25% {
+    background-image: url('../img/bridge.jpg');
+  opacity: 1;
+    transform: scale(1) translateX(0);}
+  
+  
+  /* --- 圖片 2 階段 --- */
+  33.33%, 58.33% {
+    background-image: url('../img/海岸列車.jpg');
+  }
+  
+  /* --- 圖片 3 階段 --- */
+  66.66%, 91.66% {
+    background-image: url('../img/白淺灘.jpg');
+  }
+  
+  /* --- 回到圖片 1 --- */
+  100% {
+    background-image: url('../img/bridge.jpg');
+  }
+}

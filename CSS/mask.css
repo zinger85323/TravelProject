@@ -1,0 +1,26 @@
+.mask_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mask {
+  /* 建議明確指定圖片顯示寬度 */
+  width: 100%;
+  max-width: 1300px; /* 依你的版面需求調整 */
+  height: auto;
+  display: block;
+
+  /* 1. WebKit 瀏覽器前綴 */
+  /* -webkit-mask-image: url(./../img/home_text.jpg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center; */
+
+  /* 2. 標準屬性 */
+  mask-image: url(./../img/home_text.jpg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}

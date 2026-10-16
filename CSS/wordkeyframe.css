@@ -1,0 +1,28 @@
+/* 呼吸漸顯特效 */
+@keyframes pulse_w {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+#word {
+    display: inline-block;
+    animation: pulse_w 1.5s ease-out forwards;
+    opacity: 0;
+}
+#word2 {
+    display: inline-block;
+    animation: pulse_w 1.5s ease-out 0.5s forwards;
+    opacity: 0;
+}
+#word3 {
+    display: inline-block;
+    animation: pulse_w 1.5s ease-out 1s forwards;
+    opacity: 0;
+}

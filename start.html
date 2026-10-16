@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>釜山都市導覽 - BUSAN</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/keyframe.css">
+    <link rel="stylesheet" href="./CSS/wordkeyframe.css">
+    <link rel="stylesheet" href="./CSS/hover.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/img.css">
+
+    <!-- 引入 Google Fonts 提升中英文字體質感 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+TC:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- ─── 新增：頂部固定導覽列 ─── -->
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="nav-logo">BUSAN</a>
+            <div class="nav-links">
+                <a href="#intro">城市簡介</a>
+                <a href="#spots">熱門景點</a>
+                <a href="#itinerary">推薦行程</a>
+                <a href="#tips">實用小幫手</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero_card"></div>
+
+
+    <section class="container">
+
+        <!-- 城市簡介區塊 (加上 id="intro") -->
+        <div class="intro-section" id="intro">
+            <span class="subtitle" id="word">ABOUT THE CITY</span>
+            <h2 class="main-title" id="word2">城市簡介</h2>
+            <p class="intro-text" id="word3">
+                釜山是韓國第二大城市，也是一座將「都市繁華」與「自然海景」完美融合的港灣都市。這裡擁有比首爾更悠閒的步伐、更遼闊的海岸線。無論是漫步在廣安里海灘吹著海風，還是穿梭在充滿歷史故事的彩色小鎮，釜山獨特的「大器與溫柔」，總能讓每位旅人找到留戀的理由。
+            </p>
+        </div>
+
+        <!-- 景點熱門行程網格 (加上 id="spots") -->
+        <div class="tours-grid" id="spots">
+
+            <!-- 卡片 1：海雲台 -->
+            <div class="tour-card" id="card_overlay" style="background-image: url('./img/列車.jpg');">
+                <div class="card-overlay">
+                    <span class="card-num"></span>
+                    <div class="card-info">
+                        <h3>海雲台天空艙膠囊列車</h3>
+                        <p>繽紛可愛的復古微型電車，行駛在海天一線的高架軌道上。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 2：甘川洞 -->
+            <div class="tour-card" id="card_overlay1" style="background-image: url('./img/小王子.png');">
+                <div class="card-overlay">
+                    <span class="card-num"></span>
+                    <div class="card-info">
+                        <h3>甘川洞文化村</h3>
+                        <p>被譽為「韓國的聖托里尼」，沿著山坡疊層排列的彩色房屋。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 3：廣安里 -->
+            <div class="tour-card" id="card_overlay2" style="background-image: url('./img/gwangan.jpg');">
+                <div class="card-overlay">
+                    <span class="card-num"></span>
+                    <div class="card-info">
+                        <h3>廣安里海水浴場</h3>
+                        <p>與壯麗的「廣安大橋」遙遙相望，夜間最美燈光秀與無人機表演。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 卡片 4：札嘎其 -->
+            <div class="tour-card" id="card_overlay3" style="background-image: url('./img/影島.jpg');">
+                <div class="card-overlay">
+                    <span class="card-num"></span>
+                    <div class="card-info">
+                        <h3>影島</h3>
+                        <p>擁有壯麗的海岸峭壁、海景第一排的文青聚落以及新鮮海味。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 精選推薦行程 (加上 id="itinerary") -->
+        <div class="itinerary-section" id="itinerary">
+            <h2 class="section-title">精選推薦行程 <span class="badge">2 Day 1 Night</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-badge">Day 1</div>
+                    <div class="timeline-content">
+                        <h3>文青與浪漫夜色</h3>
+                        <ul>
+                            <li><strong>10:00 - 甘川洞文化村</strong>：漫步彩色積木房子、尋找小王子合影。</li>
+                            <li><strong>13:00 - 札嘎其市場</strong>：品嚐最道地的現撈海鮮與釜山生魚片。</li>
+                            <li><strong>18:30 - 廣安里海水浴場</strong>：看廣安大橋浪漫夜景、吹海風。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge">Day 2</div>
+                    <div class="timeline-content">
+                        <h3>經典海景與鐵道旅行</h3>
+                        <ul>
+                            <li><strong>09:30 - 海雲台天空艙膠囊列車</strong>：搭乘繽紛微型電車，穿梭海天一線。</li>
+                            <li><strong>12:00 - 海雲台傳統市場</strong>：品嚐黑糖餅、盲鰻、辣炒年糕等在地小吃。</li>
+                            <li><strong>15:00 - 白淺灘文化村</strong>：沿著海岸線散步，找家海景咖啡廳享受午後。</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 旅人實用小幫手 (加上 id="tips") -->
+        <div class="tips-section" id="tips">
+            <h2 class="section-title">旅人實用小幫手</h2>
+            <div class="tips-grid">
+                <div class="tip-box" id="light">
+                    <h4>最佳旅遊季節</h4>
+                    <p>推薦 4 月前來賞櫻，或 10-11 月前來賞楓，此時氣候最宜人。</p>
+                </div>
+                <div class="tip-box" id="light2">
+                    <h4>必備神卡</h4>
+                    <p>推薦購買「Visit Busan Pass」，可免費進入膠囊列車等 30 多個熱門景點！</p>
+                </div>
+                <div class="tip-box" id="light3">
+                    <h4>在地必吃</h4>
+                    <p>豬肉湯飯、堅果黑糖餅、盲鰻與韓式烤肉，是釜山絕對不能錯過的美食。</p>
+                </div>
+            </div>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21313.828858228186!2d129.06559559482326!3d35.17760326778765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb6de823cd35%3A0x35d8cb74247108a7!2z5Y2X6Z-T6Yec5bGx!5e0!3m2!1szh-TW!2stw!4v1784617026989!5m2!1szh-TW!2stw"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+        
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <footer class="footer-minimal">
+            <div class="footer-minimal-content">
+                <p>&copy; 2026 Zilun Design. 創作者版權所有</p>
+                <span>隱私權政策</span>
+                <span>服務條款</span>
+                <br>
+                <i class="bi bi-line"></i>
+                <i class="bi bi-envelope"></i>
+            </div>
+        </footer>
+
+
+
+    </section>
+</body>
+
+</html>
